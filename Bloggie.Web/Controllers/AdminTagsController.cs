@@ -9,5 +9,13 @@ namespace Bloggie.Web.Controllers
         {
             return View();
         }
+        [HttpPost]
+        [ActionName("Add")]
+
+        public IActionResult SubmitTag()
+        {
+        
+            return View("Add");
+        }
     }
 }
